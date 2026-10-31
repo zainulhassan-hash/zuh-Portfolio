@@ -1,0 +1,4007 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zain ul Hassan | CS Undergrad, Digital Creator & Founder of AURAMAX</title>
+  <meta name="description" content="Portfolio of Zain ul Hassan — Computer Science student bridging technical logic, AI-driven vibe coding, and high-impact social media marketing. Founder of AURAMAX.">
+  <meta name="keywords" content="Zain ul Hassan, Vibe Coding, Computer Science, AURAMAX, AI Video, Social Media Growth, Web Prototyping, Tech Portfolio">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Zain ul Hassan | Building Brands. Vibe Coding The Future">
+  <meta property="og:description" content="CS student bridging the gap between technical logic, AI-driven development, and high-impact social media marketing. Founder of AURAMAX.">
+  <meta property="og:image" content="profile picture.jpeg">
+
+  <!-- Favicon -->
+  <!-- Favicon / Browser Tab Icon: Profile Picture -->
+  <link rel="icon" type="image/jpeg" href="profile-picture.jpeg">
+  <link rel="shortcut icon" href="profile-picture.jpeg">
+  <link rel="apple-touch-icon" href="profile-picture.jpeg">
+
+  <!-- Google Fonts: Plus Jakarta Sans, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <style>
+/* ==========================================================================
+   DESIGN SYSTEM & CSS VARIABLES
+   Theme: Ultra-Sleek Dark Mode with Neon Emerald & Electric Violet Accents
+   ========================================================================== */
+
+:root {
+  /* Background Colors */
+  --bg-black: #060709;
+  --bg-primary: #0a0c10;
+  --bg-secondary: #0f1218;
+  --bg-tertiary: #151922;
+
+  /* Glassmorphism Surface Colors */
+  --card-bg: rgba(16, 20, 28, 0.65);
+  --card-bg-hover: rgba(22, 28, 40, 0.85);
+  --card-border: rgba(255, 255, 255, 0.08);
+  --card-border-hover: rgba(0, 255, 136, 0.3);
+  --glass-panel: rgba(255, 255, 255, 0.03);
+
+  /* High-Contrast Neon Accent Palette */
+  --neon-green: #00ff88;
+  --neon-green-glow: rgba(0, 255, 136, 0.38);
+  --neon-green-dark: #00cc6a;
+
+  --neon-violet: #8b5cf6;
+  --neon-violet-glow: rgba(139, 92, 246, 0.42);
+  --neon-violet-dark: #7c3aed;
+
+  --neon-cyan: #00f0ff;
+  --neon-cyan-glow: rgba(0, 240, 255, 0.35);
+
+  --neon-pink: #f43f5e;
+
+  /* Typography */
+  --font-heading: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  /* Text Colors */
+  --text-white: #ffffff;
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --text-dark: #334155;
+
+  /* Layout & Transitions */
+  --container-max: 1200px;
+  --nav-height: 80px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-full: 9999px;
+
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ==========================================================================
+   RESET & BASE STYLES
+   ========================================================================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  color-scheme: dark;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-black);
+  color: var(--text-primary);
+  line-height: 1.65;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-black);
+}
+::-webkit-scrollbar-thumb {
+  background: #1e2433;
+  border-radius: var(--radius-full);
+  border: 2px solid var(--bg-black);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--neon-green);
+}
+
+::selection {
+  background: var(--neon-green);
+  color: #000000;
+}
+
+/* Links & Typography reset */
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+}
+
+img, video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.section {
+  padding: 6.5rem 0;
+  position: relative;
+  z-index: 2;
+}
+
+/* ==========================================================================
+   AMBIENT GLOWS & BACKGROUND FX
+   ========================================================================== */
+
+.ambient-glow-wrapper {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.glow-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(140px);
+  opacity: 0.16;
+  mix-blend-mode: screen;
+  will-change: transform;
+}
+
+.orb-1 {
+  top: -10%;
+  left: -10%;
+  width: 650px;
+  height: 650px;
+  background: radial-gradient(circle, var(--neon-green) 0%, transparent 70%);
+  animation: floatOrb 22s ease-in-out infinite alternate;
+}
+
+.orb-2 {
+  top: 35%;
+  right: -10%;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, var(--neon-violet) 0%, transparent 70%);
+  animation: floatOrb 26s ease-in-out infinite alternate-reverse;
+}
+
+.orb-3 {
+  bottom: -15%;
+  left: 20%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, var(--neon-cyan) 0%, transparent 75%);
+  animation: floatOrb 20s ease-in-out infinite alternate;
+}
+
+@keyframes floatOrb {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(60px, 40px) scale(1.1); }
+  100% { transform: translate(-40px, 70px) scale(0.95); }
+}
+
+/* Cybernetic subtle grid texture */
+.cyber-grid-overlay {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 50px 50px;
+  mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.2) 75%);
+  -webkit-mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.2) 75%);
+}
+
+/* Custom Interactive Cursor Glow */
+.cursor-glow {
+  position: fixed;
+  width: 320px;
+  height: 320px;
+  margin-top: -160px;
+  margin-left: -160px;
+  background: radial-gradient(circle, rgba(0, 255, 136, 0.12) 0%, rgba(139, 92, 246, 0.06) 40%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 999;
+  mix-blend-mode: screen;
+  transition: transform 0.08s linear, opacity 0.3s ease;
+  opacity: 0;
+}
+
+@media (pointer: fine) {
+  .cursor-glow {
+    opacity: 1;
+  }
+}
+
+/* ==========================================================================
+   NAVIGATION BAR
+   ========================================================================== */
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--nav-height);
+  z-index: 100;
+  transition: all var(--transition-normal);
+}
+
+.site-header.scrolled {
+  background: rgba(10, 12, 16, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.nav-container {
+  max-width: var(--container-max);
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.nav-avatar-mini {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1.5px solid var(--neon-green);
+  box-shadow: 0 0 10px rgba(0, 255, 136, 0.4);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.35rem;
+  flex-shrink: 0;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+.nav-brand:hover .nav-avatar-mini {
+  transform: scale(1.08);
+  box-shadow: 0 0 15px rgba(0, 255, 136, 0.7);
+}
+.nav-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.nav-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--font-mono);
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+
+.brand-code-bracket {
+  color: var(--neon-green);
+  opacity: 0.85;
+}
+
+.brand-name {
+  color: var(--text-white);
+}
+
+.nav-brand .accent-text {
+  color: var(--neon-violet);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--card-border);
+  padding: 0.5rem 1.25rem;
+  border-radius: var(--radius-full);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.nav-link {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  position: relative;
+  padding: 0.25rem 0.2rem;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--text-white);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--neon-green), var(--neon-violet));
+  border-radius: var(--radius-full);
+  transition: width var(--transition-normal);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.nav-cta-pill {
+  color: #000 !important;
+  background: var(--neon-green);
+  padding: 0.45rem 1.1rem !important;
+  border-radius: var(--radius-full);
+  font-weight: 600 !important;
+  box-shadow: 0 0 15px var(--neon-green-glow);
+  transition: all var(--transition-fast) !important;
+}
+
+.nav-cta-pill::after {
+  display: none !important;
+}
+
+.nav-cta-pill:hover {
+  background: #33ff9f;
+  transform: translateY(-1px);
+  box-shadow: 0 0 22px var(--neon-green-glow);
+}
+
+/* Nav Actions & Status */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(0, 255, 136, 0.08);
+  border: 1px solid rgba(0, 255, 136, 0.25);
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-full);
+  font-size: 0.78rem;
+  font-family: var(--font-mono);
+  color: var(--neon-green);
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+  background-color: var(--neon-green);
+  border-radius: 50%;
+  box-shadow: 0 0 8px var(--neon-green);
+  animation: pulseDot 2s infinite;
+}
+
+@keyframes pulseDot {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(0, 255, 136, 0.7); }
+  70% { transform: scale(1.1); box-shadow: 0 0 0 8px rgba(0, 255, 136, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(0, 255, 136, 0); }
+}
+
+.mobile-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--card-border);
+  color: var(--text-white);
+}
+
+.hamburger-line {
+  width: 20px;
+  height: 2px;
+  background: var(--text-white);
+  border-radius: 2px;
+  transition: all var(--transition-fast);
+}
+
+/* Mobile Drawer Overlay */
+.mobile-drawer {
+  position: fixed;
+  inset: 0;
+  background: rgba(6, 7, 9, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-normal);
+}
+
+.mobile-drawer.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mobile-drawer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.75rem;
+  text-align: center;
+}
+
+.mobile-nav-link {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  transition: color var(--transition-fast);
+}
+
+.mobile-nav-link:hover {
+  color: var(--neon-green);
+}
+
+.mobile-cta-link {
+  color: #000 !important;
+  background: var(--neon-green);
+  padding: 0.8rem 2.2rem;
+  border-radius: var(--radius-full);
+  margin-top: 1rem;
+}
+
+.mobile-socials {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.mobile-socials a {
+  color: var(--text-secondary);
+  transition: color var(--transition-fast);
+}
+
+.mobile-socials a:hover {
+  color: var(--neon-green);
+}
+
+/* ==========================================================================
+   BUTTONS & MICRO-COMPONENTS
+   ========================================================================== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.85rem 1.85rem;
+  border-radius: var(--radius-full);
+  transition: all var(--transition-normal);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--neon-green) 0%, #00d674 100%);
+  color: #040806;
+  border: 1px solid rgba(0, 255, 136, 0.4);
+  box-shadow: 0 4px 20px var(--neon-green-glow);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #24ff98 0%, var(--neon-green) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 255, 136, 0.55);
+}
+
+.btn-secondary.glass-btn {
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-white);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.btn-secondary.glass-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--neon-violet);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px var(--neon-violet-glow);
+}
+
+.sm-btn {
+  padding: 0.6rem 1.25rem;
+  font-size: 0.85rem;
+}
+
+.pill-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 1rem;
+  border-radius: var(--radius-full);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  margin-bottom: 1.25rem;
+}
+
+.pill-tag.glow-green {
+  background: rgba(0, 255, 136, 0.08);
+  border: 1px solid rgba(0, 255, 136, 0.3);
+  color: var(--neon-green);
+  box-shadow: 0 0 16px rgba(0, 255, 136, 0.15);
+}
+
+.pill-tag.glow-violet {
+  background: rgba(139, 92, 246, 0.08);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  color: #c4b5fd;
+  box-shadow: 0 0 16px rgba(139, 92, 246, 0.18);
+}
+
+.pill-tag.glow-cyan {
+  background: rgba(0, 240, 255, 0.08);
+  border: 1px solid rgba(0, 240, 255, 0.3);
+  color: var(--neon-cyan);
+  box-shadow: 0 0 16px rgba(0, 240, 255, 0.18);
+}
+
+/* Glassmorphism Cards */
+.glass-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+  transition: all var(--transition-normal);
+  position: relative;
+}
+
+.glass-card:hover {
+  border-color: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
+}
+
+/* Section Header Styles */
+.section-header {
+  margin-bottom: 4rem;
+}
+
+.section-header.text-center {
+  text-align: center;
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--text-white);
+  line-height: 1.18;
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--neon-green) 0%, var(--neon-cyan) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-violet-green {
+  background: linear-gradient(135deg, var(--neon-violet) 0%, var(--neon-green) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Icons generic */
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  stroke-width: 2;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.icon.sm {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* ==========================================================================
+   SECTION 1: HERO SECTION
+   ========================================================================== */
+
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: calc(var(--nav-height) + 2rem);
+  padding-bottom: 4rem;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: 4rem;
+}
+
+.hero-headline {
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 5.5vw, 4.25rem);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  color: var(--text-white);
+  margin-bottom: 1.5rem;
+}
+
+.hero-subheadline {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  max-width: 580px;
+  margin-bottom: 2.25rem;
+}
+
+.hero-subheadline strong {
+  color: var(--text-white);
+  font-weight: 600;
+}
+
+.hero-cta-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-bottom: 3.5rem;
+}
+
+.arrow-icon {
+  transition: transform var(--transition-fast);
+}
+
+.btn:hover .arrow-icon {
+  transform: translateX(4px);
+}
+
+/* Hero Stats Row */
+.hero-stats {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-number {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--text-white);
+  letter-spacing: -0.02em;
+}
+
+.stat-label {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 0.15rem;
+}
+
+.stat-divider {
+  width: 1px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Hero Visual: Profile Picture & Floating Holographic Badges */
+.hero-visual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar-card-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+}
+
+.avatar-aura-ring {
+  position: absolute;
+  inset: -15px;
+  border-radius: var(--radius-xl);
+  background: linear-gradient(135deg, var(--neon-green), var(--neon-violet), var(--neon-cyan));
+  filter: blur(28px);
+  opacity: 0.45;
+  z-index: 1;
+  animation: pulseAura 6s ease-in-out infinite alternate;
+}
+
+@keyframes pulseAura {
+  0% { opacity: 0.35; transform: scale(0.98); }
+  100% { opacity: 0.6; transform: scale(1.02); }
+}
+
+.avatar-frame {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  aspect-ratio: 4 / 4.7;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.7);
+  background: #0f131a;
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform var(--transition-smooth);
+}
+
+.avatar-frame:hover .avatar-img {
+  transform: scale(1.04);
+}
+
+.avatar-glass-glare {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.1) 0%, transparent 40%, rgba(0, 255, 136, 0.05) 100%);
+  pointer-events: none;
+}
+
+/* Floating Glass Badges */
+.floating-badge {
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.75rem 1.15rem;
+  border-radius: var(--radius-md);
+  background: rgba(14, 18, 25, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  animation: floatBadge 4.5s ease-in-out infinite alternate;
+  white-space: nowrap;
+}
+
+.badge-top-left {
+  top: -20px;
+  left: -25px;
+  animation-delay: 0s;
+}
+
+.badge-bottom-right {
+  bottom: 25px;
+  right: -30px;
+  animation-delay: 1.5s;
+}
+
+.badge-bottom-left {
+  bottom: -20px;
+  left: -15px;
+  animation-delay: 2.8s;
+}
+
+@keyframes floatBadge {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+
+.badge-icon-box {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge-icon-box svg {
+  width: 18px;
+  height: 18px;
+}
+
+.green-icon-box {
+  background: rgba(0, 255, 136, 0.15);
+  color: var(--neon-green);
+  border: 1px solid rgba(0, 255, 136, 0.3);
+}
+
+.violet-icon-box {
+  background: rgba(139, 92, 246, 0.15);
+  color: var(--neon-violet);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+}
+
+.cyan-icon-box {
+  background: rgba(0, 240, 255, 0.15);
+  color: var(--neon-cyan);
+  border: 1px solid rgba(0, 240, 255, 0.3);
+}
+
+.badge-text-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.badge-title {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-white);
+}
+
+.badge-sub {
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+}
+
+/* Scroll Down Indicator */
+.scroll-down-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.scroll-down-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-muted);
+  transition: color var(--transition-fast);
+}
+
+.scroll-down-indicator:hover {
+  color: var(--neon-green);
+}
+
+.mouse-icon {
+  width: 24px;
+  height: 38px;
+  border: 2px solid currentColor;
+  border-radius: 12px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.mouse-wheel {
+  width: 4px;
+  height: 8px;
+  background: currentColor;
+  border-radius: 2px;
+  position: absolute;
+  top: 6px;
+  animation: scrollWheel 2s infinite;
+}
+
+@keyframes scrollWheel {
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(14px); opacity: 0; }
+}
+
+.scroll-label {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.15em;
+}
+
+/* ==========================================================================
+   SECTION 2: ABOUT & VIBE CODING PHILOSOPHY
+   ========================================================================== */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: stretch;
+}
+
+.about-bio-card {
+  padding: 2.75rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-badge {
+  display: inline-block;
+  align-self: flex-start;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--neon-green);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1rem;
+}
+
+.card-heading {
+  font-family: var(--font-heading);
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: var(--text-white);
+  letter-spacing: -0.02em;
+  margin-bottom: 1.5rem;
+}
+
+.bio-paragraph {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+  margin-bottom: 1.5rem;
+}
+
+.bio-paragraph strong {
+  color: var(--text-white);
+}
+
+.highlight-box {
+  background: rgba(139, 92, 246, 0.08);
+  border-left: 3px solid var(--neon-violet);
+  padding: 1.25rem 1.5rem;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  font-style: italic;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.quote-symbol {
+  color: var(--neon-violet);
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.pillars-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin-top: auto;
+}
+
+.pillar-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+}
+
+.pillar-item:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.12);
+  transform: translateX(4px);
+}
+
+.pillar-icon {
+  font-size: 1.25rem;
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.pillar-icon.green-glow {
+  background: rgba(0, 255, 136, 0.12);
+  border: 1px solid rgba(0, 255, 136, 0.25);
+}
+
+.pillar-icon.violet-glow {
+  background: rgba(139, 92, 246, 0.12);
+  border: 1px solid rgba(139, 92, 246, 0.25);
+}
+
+.pillar-icon.cyan-glow {
+  background: rgba(0, 240, 255, 0.12);
+  border: 1px solid rgba(0, 240, 255, 0.25);
+}
+
+.pillar-details h4 {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-white);
+  margin-bottom: 0.2rem;
+}
+
+.pillar-details p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* Interactive Vibe Terminal */
+.terminal-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-color: rgba(0, 255, 136, 0.18);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+}
+
+.terminal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 1.25rem;
+  background: rgba(10, 12, 17, 0.9);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.terminal-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.terminal-dots .dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+}
+
+.dot.red { background: #ff5f56; }
+.dot.yellow { background: #ffbd2e; }
+.dot.green { background: #27c93f; }
+
+.terminal-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+}
+
+.terminal-lang {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--neon-green);
+  background: rgba(0, 255, 136, 0.1);
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius-sm);
+}
+
+.terminal-body {
+  padding: 1.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: #e2e8f0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background: rgba(8, 10, 14, 0.75);
+}
+
+.terminal-line {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  word-break: break-word;
+}
+
+.t-prompt { color: var(--neon-green); font-weight: bold; }
+.t-cmd { color: var(--text-white); font-weight: 600; }
+.t-str { color: #fef08a; }
+.t-dim { color: var(--text-muted); font-size: 0.82rem; }
+.t-info { color: var(--neon-cyan); }
+.t-success { color: var(--neon-green); font-weight: 600; }
+.t-check { color: var(--neon-green); }
+
+.code-snippet-box {
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-sm);
+  padding: 1rem;
+  margin: 0.5rem 0;
+  font-size: 0.82rem;
+}
+
+.code-line {
+  line-height: 1.5;
+}
+
+.indent-1 {
+  padding-left: 1.5rem;
+}
+
+.c-keyword { color: #f43f5e; font-weight: 600; }
+.c-var { color: #67e8f9; }
+.c-func { color: #c084fc; font-weight: 600; }
+.c-prop { color: #93c5fd; }
+.c-str { color: #86efac; }
+
+.terminal-interactive-zone {
+  min-height: 28px;
+  display: flex;
+  align-items: center;
+}
+
+.t-typing {
+  color: var(--neon-violet);
+  font-weight: 600;
+}
+
+.t-cursor {
+  color: var(--neon-green);
+  animation: blinkCursor 0.8s infinite;
+  margin-left: 2px;
+}
+
+@keyframes blinkCursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.terminal-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.t-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  padding: 0.35rem 0.8rem;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-secondary);
+  transition: all var(--transition-fast);
+}
+
+.t-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-white);
+  border-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-1px);
+}
+
+.btn-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.btn-dot.green { background: var(--neon-green); }
+.btn-dot.violet { background: var(--neon-violet); }
+.btn-dot.cyan { background: var(--neon-cyan); }
+
+.terminal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.65rem 1.25rem;
+  background: rgba(10, 12, 17, 0.95);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+.t-status {
+  color: var(--neon-green);
+}
+
+/* ==========================================================================
+   SECTION 3: FEATURED VENTURE: AURAMAX
+   ========================================================================== */
+
+.auramax-banner-card {
+  padding: 3rem;
+  border-color: rgba(0, 255, 136, 0.2);
+  background: radial-gradient(circle at 85% 10%, rgba(0, 255, 136, 0.07) 0%, rgba(16, 20, 28, 0.75) 50%);
+}
+
+.auramax-brand-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: 2.25rem;
+}
+
+.brand-logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.auramax-logo-img {
+  max-height: 52px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 16px rgba(0, 255, 136, 0.3));
+  transition: transform var(--transition-fast);
+}
+
+.auramax-logo-img:hover {
+  transform: scale(1.03);
+}
+
+.logo-fallback-text {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  color: var(--text-white);
+  text-shadow: 0 0 20px var(--neon-green);
+}
+
+.auramax-links-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.auramax-url-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(0, 255, 136, 0.12);
+  border: 1px solid rgba(0, 255, 136, 0.35);
+  color: var(--neon-green);
+  padding: 0.45rem 1rem;
+  border-radius: var(--radius-full);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 600;
+  box-shadow: 0 0 15px rgba(0, 255, 136, 0.15);
+  transition: all var(--transition-fast);
+}
+
+.auramax-url-pill:hover {
+  background: rgba(0, 255, 136, 0.22);
+  transform: translateY(-1px);
+  box-shadow: 0 0 25px rgba(0, 255, 136, 0.35);
+}
+
+.url-dot {
+  width: 7px;
+  height: 7px;
+  background: var(--neon-green);
+  border-radius: 50%;
+}
+
+.channel-badge {
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  padding: 0.4rem 0.85rem;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-secondary);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.shopify-badge {
+  color: #95bf47;
+  border-color: rgba(149, 191, 71, 0.3);
+  background: rgba(149, 191, 71, 0.08);
+}
+
+.tiktok-badge {
+  color: #00f2fe;
+  border-color: rgba(0, 242, 254, 0.3);
+  background: rgba(0, 242, 254, 0.08);
+}
+
+.insta-badge {
+  color: #f77737;
+  border-color: rgba(247, 119, 55, 0.3);
+  background: rgba(247, 119, 55, 0.08);
+}
+
+/* Auramax Info */
+.auramax-info-content {
+  margin-bottom: 3.5rem;
+}
+
+.info-text h3 {
+  font-family: var(--font-heading);
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: var(--text-white);
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+}
+
+.info-text p {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  max-width: 900px;
+  margin-bottom: 1.5rem;
+}
+
+.info-text p strong {
+  color: var(--text-white);
+}
+
+.auramax-features-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+  max-width: 850px;
+}
+
+.auramax-features-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+}
+
+.bullet-check {
+  color: var(--neon-green);
+  font-weight: bold;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.banner-action-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.auramax-subtext {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+/* Product Gallery Grid */
+.auramax-product-gallery {
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.gallery-heading-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.gallery-heading-bar h4 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-white);
+}
+
+.swipe-hint {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--neon-green);
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.product-card {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: all var(--transition-normal);
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(0, 255, 136, 0.35);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), 0 0 25px rgba(0, 255, 136, 0.15);
+}
+
+.product-tag {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 3;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-sm);
+  background: rgba(0, 0, 0, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: var(--text-white);
+  backdrop-filter: blur(8px);
+}
+
+.product-tag.highlight-violet {
+  border-color: rgba(139, 92, 246, 0.5);
+  color: #c4b5fd;
+  background: rgba(139, 92, 246, 0.15);
+}
+
+.product-tag.highlight-green {
+  border-color: rgba(0, 255, 136, 0.5);
+  color: var(--neon-green);
+  background: rgba(0, 255, 136, 0.15);
+}
+
+.product-img-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: #0b0e14;
+  margin-bottom: 1.1rem;
+}
+
+.product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-smooth);
+}
+
+.product-card:hover .product-img {
+  transform: scale(1.08);
+}
+
+.product-overlay-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, transparent 30%, rgba(0, 0, 0, 0.4) 100%);
+  pointer-events: none;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.product-title {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-white);
+  margin-bottom: 0.35rem;
+}
+
+.product-spec {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+.product-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.edition-pill {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--neon-green);
+}
+
+.product-link-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-white);
+  transition: all var(--transition-fast);
+}
+
+.product-link-btn svg {
+  width: 14px;
+  height: 14px;
+}
+
+.product-card:hover .product-link-btn {
+  background: var(--neon-green);
+  color: #000;
+  border-color: var(--neon-green);
+  transform: scale(1.05);
+}
+
+/* ==========================================================================
+   SECTION 4: CORE SKILLS & EXPERTISE
+   ========================================================================== */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.skill-card {
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  transition: all var(--transition-normal);
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+}
+
+.skill-card-glow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  opacity: 0.15;
+  transition: opacity var(--transition-normal);
+}
+
+.skill-card:hover .skill-card-glow {
+  opacity: 0.35;
+}
+
+.skill-card-glow.green { background: var(--neon-green); }
+.skill-card-glow.violet { background: var(--neon-violet); }
+
+.skill-icon-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.75rem;
+}
+
+.icon-bubble {
+  width: 54px;
+  height: 54px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.icon-bubble svg {
+  width: 26px;
+  height: 26px;
+}
+
+.icon-bubble.green {
+  background: rgba(0, 255, 136, 0.12);
+  color: var(--neon-green);
+  border: 1px solid rgba(0, 255, 136, 0.3);
+}
+
+.icon-bubble.violet {
+  background: rgba(139, 92, 246, 0.12);
+  color: var(--neon-violet);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+}
+
+.icon-bubble.cyan {
+  background: rgba(0, 240, 255, 0.12);
+  color: var(--neon-cyan);
+  border: 1px solid rgba(0, 240, 255, 0.3);
+}
+
+.skill-number {
+  font-family: var(--font-mono);
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.08);
+  letter-spacing: -0.05em;
+}
+
+.skill-title {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--text-white);
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+  line-height: 1.25;
+}
+
+.skill-desc {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin-bottom: 1.75rem;
+}
+
+.skill-bullets {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-bottom: 2rem;
+}
+
+.bullet-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.bullet-item strong {
+  color: var(--text-primary);
+}
+
+.b-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--neon-green);
+  border-radius: 50%;
+  margin-top: 7px;
+  flex-shrink: 0;
+}
+
+.skill-card:nth-child(2) .b-dot {
+  background: var(--neon-violet);
+}
+
+.skill-card:nth-child(3) .b-dot {
+  background: var(--neon-cyan);
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.tag-chip {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  padding: 0.3rem 0.65rem;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--text-secondary);
+}
+
+/* ==========================================================================
+   SECTION 5: MEDIA LAB & VIDEO SHOWCASE
+   ========================================================================== */
+
+.media-showcase-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 3rem;
+  padding: 3rem;
+  align-items: center;
+}
+
+.video-player-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-video-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  max-height: 580px;
+  margin: 0 auto;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: #000000;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.75);
+}
+
+.showcase-video-elem {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.video-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity var(--transition-normal);
+  cursor: pointer;
+}
+
+.video-overlay.playing {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.custom-video-frame:hover .video-overlay.playing {
+  opacity: 1;
+  pointer-events: auto;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.video-play-btn {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: rgba(0, 255, 136, 0.9);
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 35px var(--neon-green-glow);
+  transition: transform var(--transition-fast), background var(--transition-fast);
+}
+
+.video-play-btn:hover {
+  transform: scale(1.1);
+  background: #24ff98;
+}
+
+.play-icon, .pause-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.video-hud-badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(0, 0, 0, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-white);
+  backdrop-filter: blur(8px);
+}
+
+.pulse-indicator {
+  width: 7px;
+  height: 7px;
+  background: #ff3b30;
+  border-radius: 50%;
+  animation: pulseDot 1.5s infinite;
+}
+
+.video-progress-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+.video-progress-bar {
+  height: 100%;
+  width: 0%;
+  background: var(--neon-green);
+  box-shadow: 0 0 10px var(--neon-green);
+}
+
+.video-controls-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding: 0.75rem 1.25rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-md);
+}
+
+.video-status-info {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+
+.video-control-buttons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.v-btn {
+  color: var(--text-secondary);
+  transition: color var(--transition-fast);
+}
+
+.v-btn:hover {
+  color: var(--neon-green);
+}
+
+.v-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Video Meta Column */
+.meta-tag {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--neon-violet);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.75rem;
+}
+
+.meta-title {
+  font-family: var(--font-heading);
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: var(--text-white);
+  line-height: 1.25;
+  margin-bottom: 1.25rem;
+}
+
+.meta-desc {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.production-specs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2.25rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-md);
+}
+
+.spec-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.88rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  padding-bottom: 0.75rem;
+}
+
+.spec-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.spec-label {
+  color: var(--text-muted);
+}
+
+.spec-value {
+  color: var(--text-white);
+  font-weight: 600;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+}
+
+.meta-cta-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.meta-cta-box span {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   SECTION 6: CONTACT SECTION
+   ========================================================================== */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.contact-info-card {
+  padding: 2.75rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.65rem;
+  font-weight: 800;
+  color: var(--text-white);
+  margin-bottom: 0.75rem;
+}
+
+.contact-info-card p {
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin-bottom: 2rem;
+}
+
+.social-links-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.social-channel-item {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1rem 1.25rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+}
+
+.social-channel-item:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateX(6px);
+}
+
+.channel-icon-box {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-white);
+  flex-shrink: 0;
+}
+
+.channel-icon-box svg {
+  width: 22px;
+  height: 22px;
+}
+
+.ig-gradient {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.tiktok-gradient {
+  background: linear-gradient(135deg, #00f2fe 0%, #4facfe 50%, #fe0979 100%);
+}
+
+.linkedin-gradient {
+  background: linear-gradient(135deg, #0077b5 0%, #0e76a8 100%);
+}
+
+.email-gradient {
+  background: linear-gradient(135deg, var(--neon-green) 0%, #00b359 100%);
+  color: #000;
+}
+
+.channel-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.channel-name {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text-white);
+}
+
+.channel-handle {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.channel-arrow {
+  width: 18px;
+  height: 18px;
+  color: var(--text-muted);
+  transition: transform var(--transition-fast), color var(--transition-fast);
+}
+
+.social-channel-item:hover .channel-arrow {
+  color: var(--neon-green);
+  transform: translate(3px, -3px);
+}
+
+.auramax-mini-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.25rem;
+  border-radius: var(--radius-md);
+  background: rgba(0, 255, 136, 0.05);
+  border: 1px dashed rgba(0, 255, 136, 0.3);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+
+.auramax-mini-badge a {
+  color: var(--neon-green);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.glow-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--neon-green);
+  border-radius: 50%;
+  box-shadow: 0 0 8px var(--neon-green);
+}
+
+/* Contact Form Styling */
+.contact-form-card {
+  padding: 2.75rem;
+}
+
+.form-header {
+  margin-bottom: 2rem;
+}
+
+.form-header h3 {
+  font-family: var(--font-heading);
+  font-size: 1.65rem;
+  font-weight: 800;
+  color: var(--text-white);
+  margin-bottom: 0.5rem;
+}
+
+.form-header p {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+}
+
+.sleek-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.req {
+  color: var(--neon-green);
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper input,
+.input-wrapper select,
+.input-wrapper textarea {
+  width: 100%;
+  background: rgba(10, 13, 19, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md);
+  padding: 0.85rem 1.15rem;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--text-white);
+  outline: none;
+  transition: all var(--transition-fast);
+}
+
+.input-wrapper textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.input-wrapper input:focus,
+.input-wrapper select:focus,
+.input-wrapper textarea:focus {
+  border-color: var(--neon-green);
+  box-shadow: 0 0 15px rgba(0, 255, 136, 0.2);
+  background: rgba(14, 18, 26, 0.95);
+}
+
+.input-wrapper input::placeholder,
+.input-wrapper textarea::placeholder {
+  color: var(--text-muted);
+}
+
+.select-wrapper {
+  position: relative;
+}
+
+.select-wrapper select {
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  padding-right: 2.5rem;
+}
+
+.select-wrapper select option {
+  background: #0f131a;
+  color: #fff;
+}
+
+.select-chevron {
+  position: absolute;
+  right: 1.15rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  pointer-events: none;
+  font-size: 0.8rem;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 0.5rem;
+}
+
+.send-icon {
+  width: 18px;
+  height: 18px;
+  transition: transform var(--transition-fast);
+}
+
+.submit-btn:hover .send-icon {
+  transform: translate(3px, -3px);
+}
+
+/* Toast Message */
+.toast-feedback {
+  margin-top: 1.5rem;
+  padding: 1.15rem 1.5rem;
+  border-radius: var(--radius-md);
+  background: rgba(0, 255, 136, 0.1);
+  border: 1px solid rgba(0, 255, 136, 0.35);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  animation: slideToast 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes slideToast {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.toast-icon {
+  width: 28px;
+  height: 28px;
+  background: var(--neon-green);
+  color: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.toast-title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text-white);
+}
+
+.toast-desc {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+
+.site-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: #06070a;
+  padding: 5rem 0 3rem;
+  position: relative;
+  z-index: 2;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1.4fr 1.2fr 1fr;
+  gap: 3.5rem;
+}
+
+.footer-left .nav-brand {
+  margin-bottom: 1rem;
+}
+
+.footer-tagline {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  max-width: 360px;
+}
+
+.footer-center {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.footer-links-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footer-col-title {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-white);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5rem;
+}
+
+.footer-links-col a {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  transition: color var(--transition-fast);
+}
+
+.footer-links-col a:hover {
+  color: var(--neon-green);
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-social-row {
+  display: flex;
+  gap: 0.85rem;
+  margin-bottom: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.footer-social-row a {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  transition: all var(--transition-fast);
+}
+
+.footer-social-row a svg {
+  width: 18px;
+  height: 18px;
+}
+
+.footer-social-row a:hover {
+  background: rgba(0, 255, 136, 0.15);
+  border-color: var(--neon-green);
+  color: var(--neon-green);
+  transform: translateY(-2px);
+}
+
+.copyright-notice {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* Back to top button */
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-full);
+  background: rgba(14, 18, 26, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: var(--text-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  z-index: 90;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: all var(--transition-normal);
+}
+
+.back-to-top svg {
+  width: 20px;
+  height: 20px;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  background: var(--neon-green);
+  color: #000;
+  border-color: var(--neon-green);
+  box-shadow: 0 0 20px var(--neon-green-glow);
+}
+
+/* ==========================================================================
+   RESPONSIVE MEDIA QUERIES (Mobile-First / Adaptive)
+   ========================================================================== */
+
+@media (max-width: 1080px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .media-showcase-grid {
+    grid-template-columns: 1fr;
+    padding: 2.25rem;
+  }
+
+  .custom-video-frame {
+    max-height: 480px;
+  }
+}
+
+@media (max-width: 900px) {
+  .nav-links {
+    display: none;
+  }
+
+  .mobile-toggle {
+    display: flex;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 3.5rem;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-subheadline {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-cta-group {
+    justify-content: center;
+  }
+
+  .hero-stats {
+    justify-content: center;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .footer-center {
+    justify-content: flex-start;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 4.5rem 0;
+  }
+
+  .hero-headline {
+    font-size: 2.35rem;
+  }
+
+  .hero-subheadline {
+    font-size: 1.05rem;
+  }
+
+  .hero-stats {
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 1.5rem;
+  }
+
+  .stat-divider {
+    display: none;
+  }
+
+  .about-bio-card,
+  .terminal-card,
+  .auramax-banner-card,
+  .media-showcase-grid,
+  .contact-info-card,
+  .contact-form-card {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .badge-top-left {
+    left: -10px;
+    top: -10px;
+  }
+
+  .badge-bottom-right {
+    right: -10px;
+    bottom: -10px;
+  }
+
+  .badge-bottom-left {
+    display: none; /* prevent overlap on small screens */
+  }
+
+  .auramax-brand-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .back-to-top {
+    bottom: 1.25rem;
+    right: 1.25rem;
+  }
+}
+
+</style>
+</head>
+<body class="dark-theme">
+
+  <!-- Ambient Glowing Background Canvas/Blobs -->
+  <div class="ambient-glow-wrapper" aria-hidden="true">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+    <div class="cyber-grid-overlay"></div>
+  </div>
+
+  <!-- Custom Glowing Cursor Follower -->
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- Header & Navigation -->
+  <header class="site-header" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand" aria-label="Home">
+        <span class="nav-avatar-mini">
+          <img src="profile-picture.jpeg" alt="Zain ul Hassan" class="nav-avatar-img">
+        </span>
+        <span class="brand-code-bracket">&lt;</span>
+        <span class="brand-name">Zain ul <span class="accent-text">Hassan</span></span>
+        <span class="brand-code-bracket">/&gt;</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-links" id="navMenu">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">Philosophy</a>
+        <a href="#auramax" class="nav-link">AURAMAX</a>
+        <a href="#skills" class="nav-link">Expertise</a>
+        <a href="#media-showcase" class="nav-link">Media Lab</a>
+        <a href="#contact" class="nav-link nav-cta-pill">Let's Connect</a>
+      </nav>
+
+      <!-- Live Status Pill & Mobile Menu Toggle -->
+      <div class="nav-actions">
+        <div class="status-badge" title="Status: Active & Taking Projects">
+          <span class="status-dot"></span>
+          <span class="status-text">Available to Build</span>
+        </div>
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Drawer Overlay -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="mobile-drawer-content">
+      <a href="#hero" class="mobile-nav-link">Home</a>
+      <a href="#about" class="mobile-nav-link">Philosophy</a>
+      <a href="#auramax" class="mobile-nav-link">AURAMAX</a>
+      <a href="#skills" class="mobile-nav-link">Expertise</a>
+      <a href="#media-showcase" class="mobile-nav-link">Media Lab</a>
+      <a href="#contact" class="mobile-nav-link mobile-cta-link">Let's Connect</a>
+      <div class="mobile-socials">
+        <a href="https://www.instagram.com/zainwhooo?obrf=MW91Z2c2MjIzYW9kNw==" target="_blank" rel="noopener" title="Personal Instagram: @zainwhooo" aria-label="Personal Instagram">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+        </a>
+        <a href="https://www.instagram.com/auramax.shop?mdxt=MWJqbXJzNGgwY3NwZA==" target="_blank" rel="noopener" title="AURAMAX Instagram: @auramax.shop" aria-label="AURAMAX Instagram">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
+        </a>
+        <a href="mailto:ulhassanzain125@gmail.com" title="Email: ulhassanzain125@gmail.com" aria-label="Email">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- SECTION 1: HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        
+        <div class="hero-content">
+          <!-- Live tag -->
+          <div class="pill-tag glow-green">
+            <span class="tag-icon">⚡</span>
+            <span>CS Undergrad &times; Digital Creator &times; E-Commerce Founder</span>
+          </div>
+
+          <!-- Main Headline -->
+          <h1 class="hero-headline">
+            Building Brands. <br>
+            <span class="gradient-text">Vibe Coding</span> The Future.
+          </h1>
+
+          <!-- Subheadline -->
+          <p class="hero-subheadline">
+            Computer Science student bridging the gap between <strong>technical logic</strong>, <strong>AI-driven development (&ldquo;vibe coding&rdquo;)</strong>, and <strong>high-impact social media marketing</strong>.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="hero-cta-group">
+            <a href="#auramax" class="btn btn-primary glow-button">
+              <span>Explore AURAMAX</span>
+              <svg class="icon arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary glass-btn">
+              <span>Let's Connect</span>
+              <span class="btn-bubble"></span>
+            </a>
+          </div>
+
+          <!-- Quick Metrics / Credibility Chips -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">10x</span>
+              <span class="stat-label">Faster Ship Velocity</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">AURAMAX</span>
+              <span class="stat-label">Bespoke Audio Venture</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">AI-Native</span>
+              <span class="stat-label">Creative & Code Stack</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual: Profile Picture with Futuristic Glow & Floating Cards -->
+        <div class="hero-visual">
+          <div class="avatar-card-wrapper">
+            <!-- Neon Aura Ring -->
+            <div class="avatar-aura-ring"></div>
+            
+            <div class="avatar-frame glass-panel">
+              <img 
+                src="profile-picture.jpeg" 
+                alt="Profile picture of Zain ul Hassan - CS Student, Creator & Founder of AURAMAX" 
+                class="avatar-img"
+                id="profileAvatar"
+                loading="eager"
+                onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'400\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%2300ff88\' stroke-width=\'1\'><circle cx=\'12\' cy=\'8\' r=\'5\'/><path d=\'M20 21a8 8 0 1 0-16 0\'/></svg>';"
+              >
+              <!-- Frame Glass Glow Highlight -->
+              <div class="avatar-glass-glare"></div>
+            </div>
+
+            <!-- Floating Badge 1: Vibe Coding Badge -->
+            <div class="floating-badge badge-top-left glass-badge" data-tilt>
+              <div class="badge-icon-box green-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <div class="badge-text-box">
+                <span class="badge-title">&lt;VibeCoder /&gt;</span>
+                <span class="badge-sub">Prompt &rarr; Production</span>
+              </div>
+            </div>
+
+            <!-- Floating Badge 2: Venture Badge -->
+            <div class="floating-badge badge-bottom-right glass-badge" data-tilt>
+              <div class="badge-icon-box violet-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
+              </div>
+              <div class="badge-text-box">
+                <span class="badge-title">AURAMAX Audio</span>
+                <span class="badge-sub">Bespoke Audio Tech</span>
+              </div>
+            </div>
+
+            <!-- Floating Badge 3: Growth Badge -->
+            <div class="floating-badge badge-bottom-left glass-badge" data-tilt>
+              <div class="badge-icon-box cyan-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+              </div>
+              <div class="badge-text-box">
+                <span class="badge-title">AI Video & Media</span>
+                <span class="badge-sub">Algorithmic Distribution</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="scroll-down-wrapper">
+        <a href="#about" class="scroll-down-indicator" aria-label="Scroll down to About section">
+          <span class="mouse-icon">
+            <span class="mouse-wheel"></span>
+          </span>
+          <span class="scroll-label">EXPLORE</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- SECTION 2: ABOUT ME & THE "VIBE CODING" PHILOSOPHY -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <div class="pill-tag glow-violet">
+            <span class="tag-icon">🧠</span>
+            <span>The Mindset</span>
+          </div>
+          <h2 class="section-title">About Me &amp; The <span class="gradient-violet-green">&ldquo;Vibe Coding&rdquo;</span> Philosophy</h2>
+          <p class="section-subtitle">
+            A new paradigm of building: Where raw ideas evolve into running software at the speed of intuition.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Narrative Bio Card -->
+          <div class="about-bio-card glass-card">
+            <div class="card-glow-edge"></div>
+            <div class="card-badge">CS Undergraduate &times; Digital Builder</div>
+            <h3 class="card-heading">Turning Raw Ideas Into Digital Realities</h3>
+            
+            <p class="bio-paragraph">
+              I am <strong>Zain ul Hassan</strong>, a Computer Science undergraduate obsessed with building fast, launching fearlessly, and breaking traditional bottlenecks. While traditional academia teaches you how to write lines of boilerplate, I focus on what actually matters: <strong>delivering value, shipping polished products, and mastering the tools of tomorrow.</strong>
+            </p>
+            
+            <p class="bio-paragraph highlight-box">
+              <span class="quote-symbol">&ldquo;</span>
+              <strong>Vibe coding</strong> isn't about skipping fundamentals—it's about supercharging technical logic with modern AI workflows. It means turning complex architectures, creative visions, and product iterations into working digital realities without getting bogged down by bureaucratic, slow development cycles.
+              <span class="quote-symbol">&rdquo;</span>
+            </p>
+
+            <!-- Philosophy Pillars Grid -->
+            <div class="pillars-grid">
+              <div class="pillar-item">
+                <div class="pillar-icon green-glow">⚡</div>
+                <div class="pillar-details">
+                  <h4>Speed Over Ceremony</h4>
+                  <p>Validate rapidly, build functional prototypes in hours, and ship before momentum dies.</p>
+                </div>
+              </div>
+
+              <div class="pillar-item">
+                <div class="pillar-icon violet-glow">🤖</div>
+                <div class="pillar-details">
+                  <h4>AI-Augmented Logic</h4>
+                  <p>Harness LLMs, autonomous tools, and prompt architectures as an engineering multiplier.</p>
+                </div>
+              </div>
+
+              <div class="pillar-item">
+                <div class="pillar-icon cyan-glow">🚀</div>
+                <div class="pillar-details">
+                  <h4>Code &plus; Distribution</h4>
+                  <p>A product without attention is invisible. Engineering logic is paired directly with viral marketing.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Interactive Terminal: The Vibe Coding Engine -->
+          <div class="terminal-card glass-card">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="terminal-title">
+                <svg class="icon sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+                <span>vibe-engine-v3.sh &mdash; live-session</span>
+              </div>
+              <div class="terminal-lang">TypeScript / AI Stack</div>
+            </div>
+
+            <!-- Terminal Content with Interactive Simulator -->
+            <div class="terminal-body" id="terminalBody">
+              <div class="terminal-line"><span class="t-prompt">$</span> <span class="t-cmd">vibe-code --input</span> <span class="t-str">"Custom audio e-com brand + AI ads + hyperfast UI"</span></div>
+              <div class="terminal-line t-dim"><span class="t-arrow">&gt;</span> Parsing vision parameters: [CS_Logic, HeyGen_AI, Shopify_API, Aesthetic_Dark]</div>
+              <div class="terminal-line t-info"><span class="t-arrow">&gt;</span> Generating dynamic layout &amp; neural audio shader... [OK]</div>
+              <div class="terminal-line t-success"><span class="t-check">&check;</span> Architecture synthesized in 420ms (0 bureaucratic delays)</div>
+              
+              <div class="code-snippet-box">
+                <div class="code-line"><span class="c-keyword">const</span> <span class="c-var">builder</span> = <span class="c-keyword">new</span> <span class="c-func">VibeCoder</span>({</div>
+                <div class="code-line indent-1"><span class="c-prop">founder</span>: <span class="c-str">"Zain ul Hassan"</span>,</div>
+                <div class="code-line indent-1"><span class="c-prop">mindset</span>: <span class="c-str">"Speed &times; Precision &times; Virality"</span>,</div>
+                <div class="code-line indent-1"><span class="c-prop">venture</span>: <span class="c-str">"AURAMAX (auramax.shop)"</span>,</div>
+                <div class="code-line indent-1"><span class="c-prop">workflows</span>: [<span class="c-str">"HeyGen"</span>, <span class="c-str">"Cursor"</span>, <span class="c-str">"Automations"</span>],</div>
+                <div class="code-line indent-1"><span class="c-prop">shipStatus</span>: <span class="c-keyword">async</span> () =&gt; <span class="c-keyword">await</span> deployToProduction()</div>
+                <div class="code-line">});</div>
+              </div>
+
+              <div class="terminal-interactive-zone">
+                <div class="terminal-line">
+                  <span class="t-prompt">$</span> 
+                  <span class="t-typing" id="terminalTypewriter"></span>
+                  <span class="t-cursor">_</span>
+                </div>
+              </div>
+
+              <!-- Terminal Action Buttons -->
+              <div class="terminal-buttons">
+                <button class="t-btn" data-script="run-benchmarks">
+                  <span class="btn-dot green"></span> Benchmarks
+                </button>
+                <button class="t-btn" data-script="run-philosophy">
+                  <span class="btn-dot violet"></span> Core Rules
+                </button>
+                <button class="t-btn" data-script="run-stack">
+                  <span class="btn-dot cyan"></span> Tech Stack
+                </button>
+              </div>
+            </div>
+
+            <!-- Terminal Footer Status -->
+            <div class="terminal-footer">
+              <span class="t-status">● Live Engine: Online</span>
+              <span class="t-memory">Memory: 32MB | Latency: 4ms</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 3: FEATURED VENTURE: AURAMAX (auramax.shop) -->
+    <section class="section auramax-section" id="auramax">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <div class="pill-tag glow-green">
+            <span class="tag-icon">🎧</span>
+            <span>Flagship Venture</span>
+          </div>
+          <h2 class="section-title">
+            Featured Venture: <span class="gradient-text">AURAMAX</span>
+          </h2>
+          <p class="section-subtitle">
+            Next-gen bespoke audio tech: Where high-fidelity engineering meets cybernetic aesthetics.
+          </p>
+        </div>
+
+        <!-- AURAMAX Hero Showcase Card -->
+        <div class="auramax-banner-card glass-card">
+          <div class="auramax-brand-header">
+            <div class="brand-logo-container">
+              <img 
+                src="logo.PNG" 
+                alt="AURAMAX Official Brand Logo" 
+                class="auramax-logo-img"
+                onerror="this.style.display='none'; document.getElementById('logoFallback').style.display='flex';"
+              >
+              <div class="logo-fallback-text" id="logoFallback" style="display: none;">
+                AURAMAX
+              </div>
+            </div>
+
+            <div class="auramax-links-group">
+              <a href="https://f7pfds-gv.myshopify.com" target="_blank" rel="noopener" class="auramax-url-pill">
+                <span class="url-dot"></span>
+                <span class="url-text">AURAMAX Store</span>
+                <svg class="icon sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+              <a href="https://f7pfds-gv.myshopify.com" target="_blank" rel="noopener" class="channel-badge shopify-badge" title="Shopify Store">Shopify Store &nearr;</a>
+              <a href="https://www.instagram.com/auramax.shop?mdxt=MWJqbXJzNGgwY3NwZA==" target="_blank" rel="noopener" class="channel-badge insta-badge" title="Official Instagram">@auramax.shop &nearr;</a>
+            </div>
+          </div>
+
+          <div class="auramax-info-content">
+            <div class="info-text">
+              <h3>Bespoke Audio Gadgets Engineered for Creators</h3>
+              <p>
+                <strong>AURAMAX</strong> specializes in bespoke, custom-crafted AirPods, premium over-ear headphones, and custom audio tech accessories. Designed for creators, audiophiles, and tastemakers who refuse standard, sterile white plastic. Every piece delivers ultra-rich acoustics, military-grade custom coatings, and eye-catching aesthetics that command attention on social feeds.
+              </p>
+              <ul class="auramax-features-list">
+                <li><span class="bullet-check">&check;</span> <strong>Custom Aesthetics:</strong> Bespoke matte black, cyber neon, stealth carbon, and chromatic finishes.</li>
+                <li><span class="bullet-check">&check;</span> <strong>Audiophile Tuning:</strong> Precision drivers with spatial soundstage and dynamic acoustic balancing.</li>
+                <li><span class="bullet-check">&check;</span> <strong>Omnichannel Scaling:</strong> Driven by viral short-form organic campaigns on TikTok and Instagram coupled with high-conversion Shopify infrastructure.</li>
+              </ul>
+              
+              <div class="banner-action-row">
+                <a href="https://f7pfds-gv.myshopify.com" target="_blank" rel="noopener" class="btn btn-primary glow-button">
+                  <span>Visit AURAMAX Store</span>
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+                <span class="auramax-subtext">Global Shipping &bull; Limited Edition Batches</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dynamic Audio Product Gallery Grid -->
+          <div class="auramax-product-gallery">
+            <div class="gallery-heading-bar">
+              <h4>Bespoke Product Lineup</h4>
+              <span class="swipe-hint">Interactive Preview</span>
+            </div>
+
+            <div class="products-grid">
+              <!-- Product 1 -->
+              <div class="product-card glass-card" data-product="1">
+                <div class="product-tag">Bespoke Matte</div>
+                <div class="product-img-wrapper">
+                  <img src="product-1.jpeg" alt="AURAMAX Custom Audio Tech - Model 1" class="product-img" loading="lazy">
+                  <div class="product-overlay-glow"></div>
+                </div>
+                <div class="product-details">
+                  <h5 class="product-title">AURAMAX Studio Elite</h5>
+                  <p class="product-spec">Precision Acoustic Casing &bull; Deep Charcoal</p>
+                  <div class="product-footer">
+                    <span class="edition-pill">Custom Edition</span>
+                    <a href="https://f7pfds-gv.myshopify.com" target="_blank" rel="noopener" class="product-link-btn" title="View on AURAMAX Store">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 2 -->
+              <div class="product-card glass-card" data-product="2">
+                <div class="product-tag highlight-violet">Cyber Accent</div>
+                <div class="product-img-wrapper">
+                  <img src="product-2.jpeg" alt="AURAMAX Custom Audio Tech - Model 2" class="product-img" loading="lazy">
+                  <div class="product-overlay-glow"></div>
+                </div>
+                <div class="product-details">
+                  <h5 class="product-title">AURAMAX Cyberpods Pro</h5>
+                  <p class="product-spec">Active Noise Cancellation &bull; Neon Accentuation</p>
+                  <div class="product-footer">
+                    <span class="edition-pill">Bespoke Finish</span>
+                    <a href="https://f7pfds-gv.myshopify.com" target="_blank" rel="noopener" class="product-link-btn" title="View on AURAMAX Store">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 3 -->
+              <div class="product-card glass-card" data-product="3">
+                <div class="product-tag highlight-green">Bestseller</div>
+                <div class="product-img-wrapper">
+                  <img src="product-3.jpg" alt="AURAMAX Custom Audio Tech - Model 3" class="product-img" loading="lazy">
+                  <div class="product-overlay-glow"></div>
+                </div>
+                <div class="product-details">
+                  <h5 class="product-title">AURAMAX Max Phantom</h5>
+                  <p class="product-spec">Custom Headband Architecture &bull; Matte Stealth</p>
+                  <div class="product-footer">
+                    <span class="edition-pill">Flagship Tier</span>
+                    <a href="https://f7pfds-gv.myshopify.com" target="_blank" rel="noopener" class="product-link-btn" title="View on AURAMAX Store">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 4 -->
+              <div class="product-card glass-card" data-product="4">
+                <div class="product-tag">Limited Drop</div>
+                <div class="product-img-wrapper">
+                  <img src="product-4.jpeg" alt="AURAMAX Custom Audio Tech - Model 4" class="product-img" loading="lazy">
+                  <div class="product-overlay-glow"></div>
+                </div>
+                <div class="product-details">
+                  <h5 class="product-title">AURAMAX Sound Capsule</h5>
+                  <p class="product-spec">Acoustic Shielding &bull; Magnetic Wireless Dock</p>
+                  <div class="product-footer">
+                    <span class="edition-pill">Limited Run</span>
+                    <a href="https://f7pfds-gv.myshopify.com" target="_blank" rel="noopener" class="product-link-btn" title="View on AURAMAX Store">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 4: CORE SKILLS & EXPERTISE (GRID LAYOUT) -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <div class="pill-tag glow-cyan">
+            <span class="tag-icon">⚡</span>
+            <span>Capabilities</span>
+          </div>
+          <h2 class="section-title">Core Skills &amp; <span class="gradient-text">Expertise</span></h2>
+          <p class="section-subtitle">
+            An interdisciplinary skillset engineered to design, build, and scale in the modern digital era.
+          </p>
+        </div>
+
+        <!-- Skills Triad Grid -->
+        <div class="skills-grid">
+          
+          <!-- Skill Card 1: Social Media Management & Growth -->
+          <div class="skill-card glass-card" data-tilt>
+            <div class="skill-card-glow green"></div>
+            <div class="skill-icon-header">
+              <div class="icon-bubble green">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+              </div>
+              <span class="skill-number">01</span>
+            </div>
+
+            <h3 class="skill-title">Social Media Management &amp; Growth</h3>
+            <p class="skill-desc">
+              Scaling accounts from zero to tens of thousands of engaged followers through algorithmic understanding, high-retention hooks, and community-first branding.
+            </p>
+
+            <div class="skill-bullets">
+              <div class="bullet-item">
+                <span class="b-dot"></span>
+                <span><strong>Organic Funnel Architecture:</strong> Converting casual short-form viewers into loyal paying customers.</span>
+              </div>
+              <div class="bullet-item">
+                <span class="b-dot"></span>
+                <span><strong>Audience Engagement &amp; Retention:</strong> Consistent publishing rhythms and data-driven content calendars.</span>
+              </div>
+              <div class="bullet-item">
+                <span class="b-dot"></span>
+                <span><strong>Platform Specialization:</strong> High-performing content for TikTok, Instagram Reels, and YouTube Shorts.</span>
+              </div>
+            </div>
+
+            <div class="skill-tags">
+              <span class="tag-chip">TikTok Growth</span>
+              <span class="tag-chip">Instagram Reels</span>
+              <span class="tag-chip">Viral Hooks</span>
+              <span class="tag-chip">Community Building</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 2: AI Ad Creatives & Video Production -->
+          <div class="skill-card glass-card" data-tilt>
+            <div class="skill-card-glow violet"></div>
+            <div class="skill-icon-header">
+              <div class="icon-bubble violet">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
+              </div>
+              <span class="skill-number">02</span>
+            </div>
+
+            <h3 class="skill-title">AI Ad Creatives &amp; Video Production</h3>
+            <p class="skill-desc">
+              Crafting high-converting short-form videos, disruptive ad creatives, and leveraging cutting-edge AI pipelines to generate cinematic marketing at scale.
+            </p>
+
+            <div class="skill-bullets">
+              <div class="bullet-item">
+                <span class="b-dot"></span>
+                <span><strong>HeyGen &amp; Generative AI Pipelines:</strong> Automated multilingual UGC video production with realistic synthetic presenters.</span>
+              </div>
+              <div class="bullet-item">
+                <span class="b-dot"></span>
+                <span><strong>Short-Form Video Mastery:</strong> High-retention pacing, dynamic captions, kinetic typography, and sound design.</span>
+              </div>
+              <div class="bullet-item">
+                <span class="b-dot"></span>
+                <span><strong>D2C Ad Creative Testing:</strong> Rapid multivariate creative testing for paid social (Meta Ads, TikTok Spark Ads).</span>
+              </div>
+            </div>
+
+            <div class="skill-tags">
+              <span class="tag-chip">HeyGen Workflows</span>
+              <span class="tag-chip">CapCut Pro / Premiere</span>
+              <span class="tag-chip">AI Voice &amp; B-Roll</span>
+              <span class="tag-chip">ROAS Optimization</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 3: Vibe Coding -->
+          <div class="skill-card glass-card" data-tilt>
+            <div class="skill-card-glow green"></div>
+            <div class="skill-icon-header">
+              <div class="icon-bubble cyan">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <span class="skill-number">03</span>
+            </div>
+
+            <h3 class="skill-title">Vibe Coding</h3>
+            <p class="skill-desc">
+              Rapid software prototyping, pragmatic problem-solving, and utilizing AI-assisted developer environments to build web applications without frictional overhead.
+            </p>
+
+            <div class="skill-bullets">
+              <div class="bullet-item">
+                <span class="b-dot"></span>
+                <span><strong>AI-Assisted Dev Environments:</strong> Utilizing Cursor, Claude, Antigravity, and GitHub Copilot for 10x velocity.</span>
+              </div>
+              <div class="bullet-item">
+                <span class="b-dot"></span>
+                <span><strong>Full-Stack Prototyping:</strong> Modern web architectures (HTML5/CSS3, JavaScript/TypeScript, React, Next.js, APIs).</span>
+              </div>
+              <div class="bullet-item">
+                <span class="b-dot"></span>
+                <span><strong>CS Technical Rigor:</strong> Data structures, algorithmic thinking, performance optimization, and clean refactoring.</span>
+              </div>
+            </div>
+
+            <div class="skill-tags">
+              <span class="tag-chip">Cursor &amp; AI Agents</span>
+              <span class="tag-chip">TypeScript / Python</span>
+              <span class="tag-chip">Modern UI / CSS</span>
+              <span class="tag-chip">Rapid Prototyping</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 5: MEDIA LAB & VIDEO SHOWCASE -->
+    <section class="section media-section" id="media-showcase">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <div class="pill-tag glow-violet">
+            <span class="tag-icon">🎬</span>
+            <span>Proof of Craft</span>
+          </div>
+          <h2 class="section-title">Media Lab &amp; <span class="gradient-violet-green">Video Showcase</span></h2>
+          <p class="section-subtitle">
+            Experience high-impact social media creatives crafted for viral retention and brand authority.
+          </p>
+        </div>
+
+        <div class="media-showcase-grid glass-card">
+          <!-- Video Player Column -->
+          <div class="video-player-column">
+            <div class="custom-video-frame">
+              <video 
+                id="showcaseVideo" 
+                class="showcase-video-elem" 
+                playsinline 
+                loop 
+                preload="metadata"
+                poster="product3.jpg"
+              >
+                <source src="socialmedia.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+
+              <!-- Video UI Overlay Controls -->
+              <div class="video-overlay" id="videoOverlay">
+                <button class="video-play-btn" id="playBtn" aria-label="Play video">
+                  <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                  <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display:none;"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+                </button>
+                <div class="video-hud-badge">
+                  <span class="pulse-indicator"></span>
+                  <span>socialmedia.mp4 &bull; 1080p 60fps</span>
+                </div>
+              </div>
+
+              <!-- Video Progress Bar -->
+              <div class="video-progress-container" id="videoProgressContainer">
+                <div class="video-progress-bar" id="videoProgressBar"></div>
+              </div>
+            </div>
+
+            <!-- Video Quick Controls Bar -->
+            <div class="video-controls-bar">
+              <div class="video-status-info">
+                <span id="videoCurrentTime">0:00</span> / <span id="videoDuration">0:00</span>
+              </div>
+              <div class="video-control-buttons">
+                <button class="v-btn" id="muteToggle" aria-label="Toggle mute">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="v-icon"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+                </button>
+                <button class="v-btn" id="fullscreenToggle" aria-label="Full screen">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="v-icon"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video Context Details -->
+          <div class="video-meta-column">
+            <div class="meta-tag">Viral Short-Form Production</div>
+            <h3 class="meta-title">Engineered For The Algorithm, Polished For The Brand</h3>
+            <p class="meta-desc">
+              Every second of modern digital creative is a battle for attention. Using algorithmic pacing, synchronized sound design, dynamic zooms, and AI-driven b-roll augmentation, this video demonstrates the exact workflow used to drive viral reach and conversions.
+            </p>
+
+            <div class="production-specs">
+              <div class="spec-row">
+                <span class="spec-label">Target Channels</span>
+                <span class="spec-value">Instagram Reels &bull; TikTok &bull; Shorts</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Creative Formula</span>
+                <span class="spec-value">3s Visual Hook &plus; Problem &plus; Dynamic Payoff</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Tools &amp; Stack</span>
+                <span class="spec-value">HeyGen, CapCut Pro, DaVinci, AI Sound Design</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Conversion Focus</span>
+                <span class="spec-value">D2C E-Commerce &amp; Brand Loyalty</span>
+              </div>
+            </div>
+
+            <div class="meta-cta-box">
+              <span>Looking for similar high-retention video pipelines for your brand?</span>
+              <a href="#contact" class="btn btn-secondary glass-btn sm-btn">Discuss Video Production</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 6: CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <div class="pill-tag glow-green">
+            <span class="tag-icon">📬</span>
+            <span>Get In Touch</span>
+          </div>
+          <h2 class="section-title">Let's <span class="gradient-text">Connect</span> &amp; Build</h2>
+          <p class="section-subtitle">
+            Whether you have a breakthrough project, want to collaborate on AURAMAX, or need high-converting creative &amp; vibe-coded software—my inbox is open.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Left: Social Channels & Direct Info -->
+          <div class="contact-info-card glass-card">
+            <h3>Direct Channels</h3>
+            <p>
+              Fastest response via Email or direct message on Instagram. Open to freelance development, brand creative director roles, and strategic venture partnerships.
+            </p>
+
+            <div class="social-links-list">
+              <!-- Personal Instagram -->
+              <a href="https://www.instagram.com/zainwhooo?obrf=MW91Z2c2MjIzYW9kNw==" target="_blank" rel="noopener" class="social-channel-item" data-channel="instagram-personal">
+                <div class="channel-icon-box ig-gradient">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </div>
+                <div class="channel-info">
+                  <span class="channel-name">Personal Instagram</span>
+                  <span class="channel-handle">@zainwhooo &bull; Zain ul Hassan</span>
+                </div>
+                <svg class="channel-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </a>
+
+              <!-- AURAMAX Instagram -->
+              <a href="https://www.instagram.com/auramax.shop?mdxt=MWJqbXJzNGgwY3NwZA==" target="_blank" rel="noopener" class="social-channel-item" data-channel="instagram-brand">
+                <div class="channel-icon-box ig-gradient">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
+                </div>
+                <div class="channel-info">
+                  <span class="channel-name">AURAMAX Instagram</span>
+                  <span class="channel-handle">@auramax.shop &bull; Bespoke Audio</span>
+                </div>
+                <svg class="channel-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </a>
+
+              <!-- LinkedIn / Professional Network -->
+              <a href="https://www.instagram.com/auramax.shop?mdxt=MWJqbXJzNGgwY3NwZA==" target="_blank" rel="noopener" class="social-channel-item" data-channel="linkedin">
+                <div class="channel-icon-box linkedin-gradient">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </div>
+                <div class="channel-info">
+                  <span class="channel-name">LinkedIn / Network</span>
+                  <span class="channel-handle">Zain ul Hassan &bull; CS &amp; Venture Inquiries</span>
+                </div>
+                <svg class="channel-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </a>
+
+              <!-- Direct Email -->
+              <a href="mailto:ulhassanzain125@gmail.com" class="social-channel-item" data-channel="email">
+                <div class="channel-icon-box email-gradient">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="channel-info">
+                  <span class="channel-name">Direct Email</span>
+                  <span class="channel-handle">ulhassanzain125@gmail.com</span>
+                </div>
+                <svg class="channel-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </a>
+            </div>
+
+            <!-- Venture pill badge -->
+            <div class="auramax-mini-badge">
+              <span class="glow-dot"></span>
+              <span>Official Shop: <a href="https://f7pfds-gv.myshopify.com" target="_blank" rel="noopener">f7pfds-gv.myshopify.com</a></span>
+            </div>
+          </div>
+
+          <!-- Contact Right: Sleek Interactive Form -->
+          <div class="contact-form-card glass-card">
+            <div class="form-header">
+              <h3>Send A Message</h3>
+              <p>Fill out the parameters below and trigger a direct transmission.</p>
+            </div>
+
+            <form id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="sleek-form" novalidate>
+              <input type="hidden" name="form-name" value="contact">
+              <p style="display:none;"><label>Bot field: <input name="bot-field"></label></p>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="userName">Your Name <span class="req">*</span></label>
+                  <div class="input-wrapper">
+                    <input type="text" id="userName" name="name" placeholder="e.g. Alex Morgan" required autocomplete="name">
+                    <span class="input-focus-border"></span>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="userEmail">Email Address <span class="req">*</span></label>
+                  <div class="input-wrapper">
+                    <input type="email" id="userEmail" name="email" placeholder="alex@company.com" required autocomplete="email">
+                    <span class="input-focus-border"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="inquiryType">Interest / Topic</label>
+                <div class="input-wrapper select-wrapper">
+                  <select id="inquiryType" name="inquiry">
+                    <option value="vibe-coding">Vibe Coding / Rapid Prototyping</option>
+                    <option value="auramax">AURAMAX Custom Audio Tech Inquiry</option>
+                    <option value="ai-ads">AI Ad Creatives &amp; Video Production</option>
+                    <option value="social-growth">Social Media Management &amp; Growth</option>
+                    <option value="other">General Collaboration</option>
+                  </select>
+                  <span class="select-chevron">&#9662;</span>
+                  <span class="input-focus-border"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="userMessage">Your Message <span class="req">*</span></label>
+                <div class="input-wrapper">
+                  <textarea id="userMessage" name="message" rows="4" placeholder="Tell me about your idea, timeline, or what you want to build..." required></textarea>
+                  <span class="input-focus-border"></span>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary submit-btn glow-button" id="submitBtn">
+                <span class="btn-text">Transmit Message</span>
+                <svg class="icon send-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                <span class="loader-spinner" style="display:none;"></span>
+              </button>
+            </form>
+
+            <!-- Feedback Toast Message -->
+            <div class="toast-feedback" id="formToast" style="display: none;">
+              <div class="toast-icon">&check;</div>
+              <div class="toast-content">
+                <div class="toast-title">Message Prepared!</div>
+                <div class="toast-desc">Your transmission has been delivered directly to Zain.</div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#hero" class="nav-brand">
+          <span class="brand-code-bracket">&lt;</span>
+          <span class="brand-name">Zain ul <span class="accent-text">Hassan</span></span>
+          <span class="brand-code-bracket">/&gt;</span>
+        </a>
+        <p class="footer-tagline">
+          Built by Zain ul Hassan with high-velocity &ldquo;Vibe Coding&rdquo; philosophy. Synthesizing Computer Science, AI tooling, and e-commerce brands.
+        </p>
+      </div>
+
+      <div class="footer-center">
+        <div class="footer-links-col">
+          <span class="footer-col-title">Navigation</span>
+          <a href="#hero">Home</a>
+          <a href="#about">Philosophy</a>
+          <a href="#auramax">AURAMAX</a>
+          <a href="#skills">Skills</a>
+          <a href="#media-showcase">Media Lab</a>
+        </div>
+        <div class="footer-links-col">
+          <span class="footer-col-title">Ventures</span>
+          <a href="https://f7pfds-gv.myshopify.com" target="_blank" rel="noopener">AURAMAX Store &nearr;</a>
+          <a href="https://www.instagram.com/auramax.shop?mdxt=MWJqbXJzNGgwY3NwZA==" target="_blank" rel="noopener">@auramax.shop &nearr;</a>
+          <a href="#auramax">Custom AirPods</a>
+          <a href="#media-showcase">HeyGen AI Pipeline</a>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <span class="footer-col-title">Direct Socials</span>
+        <div class="footer-social-row">
+          <a href="https://www.instagram.com/zainwhooo?obrf=MW91Z2c2MjIzYW9kNw==" target="_blank" rel="noopener" title="Personal Instagram: @zainwhooo" aria-label="Personal Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a href="https://www.instagram.com/auramax.shop?mdxt=MWJqbXJzNGgwY3NwZA==" target="_blank" rel="noopener" title="AURAMAX Instagram: @auramax.shop" aria-label="AURAMAX Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
+          </a>
+          <a href="mailto:ulhassanzain125@gmail.com" title="Email: ulhassanzain125@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </a>
+        </div>
+        <p class="copyright-notice">
+          &copy; <span id="currentYear">2026</span> Zain ul Hassan. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="backToTopBtn" aria-label="Scroll back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <!-- Script File -->
+  <script>
+/**
+ * Zain ul Hassan — Portfolio & AURAMAX Showcase
+ * Interactive Script: micro-interactions, terminal simulator, custom video controls, and animations.
+ */
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  /* ==========================================================================
+     1. CURRENT YEAR IN FOOTER
+     ========================================================================== */
+  const yearElem = document.getElementById('currentYear');
+  if (yearElem) {
+    yearElem.textContent = new Date().getFullYear();
+  }
+
+  /* ==========================================================================
+     2. CUSTOM CURSOR FOLLOWER
+     ========================================================================== */
+  const cursorGlow = document.getElementById('cursorGlow');
+  if (cursorGlow && window.matchMedia('(pointer: fine)').matches) {
+    let mouseX = window.innerWidth / 2;
+    let mouseY = window.innerHeight / 2;
+    let currentX = mouseX;
+    let currentY = mouseY;
+
+    window.addEventListener('mousemove', (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    });
+
+    const renderCursor = () => {
+      currentX += (mouseX - currentX) * 0.15;
+      currentY += (mouseY - currentY) * 0.15;
+      cursorGlow.style.transform = `translate3d(${currentX}px, ${currentY}px, 0)`;
+      requestAnimationFrame(renderCursor);
+    };
+    renderCursor();
+  }
+
+  /* ==========================================================================
+     3. STICKY NAVBAR & ACTIVE SCROLL SPY
+     ========================================================================== */
+  const navbar = document.getElementById('navbar');
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-link:not(.nav-cta-pill)');
+
+  const handleScroll = () => {
+    if (window.scrollY > 40) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+
+    // Scroll spy
+    let currentSection = '';
+    const scrollPos = window.scrollY + 200;
+
+    sections.forEach(sec => {
+      const top = sec.offsetTop;
+      const height = sec.offsetHeight;
+      if (scrollPos >= top && scrollPos < top + height) {
+        currentSection = sec.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === `#${currentSection}`) {
+        link.classList.add('active');
+      }
+    });
+
+    // Back to top visibility
+    const backToTopBtn = document.getElementById('backToTopBtn');
+    if (backToTopBtn) {
+      if (window.scrollY > 500) {
+        backToTopBtn.classList.add('visible');
+      } else {
+        backToTopBtn.classList.remove('visible');
+      }
+    }
+  };
+
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  handleScroll();
+
+  // Back to top action
+  const backToTopBtn = document.getElementById('backToTopBtn');
+  if (backToTopBtn) {
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  /* ==========================================================================
+     4. MOBILE MENU DRAWER
+     ========================================================================== */
+  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+  const mobileDrawer = document.getElementById('mobileDrawer');
+  const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+  if (mobileMenuBtn && mobileDrawer) {
+    const toggleMenu = () => {
+      const isOpen = mobileDrawer.classList.contains('open');
+      if (isOpen) {
+        mobileDrawer.classList.remove('open');
+        mobileMenuBtn.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      } else {
+        mobileDrawer.classList.add('open');
+        mobileMenuBtn.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+      }
+    };
+
+    mobileMenuBtn.addEventListener('click', toggleMenu);
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileDrawer.classList.remove('open');
+        mobileMenuBtn.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      });
+    });
+  }
+
+  /* ==========================================================================
+     5. INTERACTIVE TERMINAL SIMULATOR
+     ========================================================================== */
+  const typewriterElem = document.getElementById('terminalTypewriter');
+  const terminalBody = document.getElementById('terminalBody');
+  const terminalButtons = document.querySelectorAll('.t-btn');
+
+  const typewriterPhrases = [
+    'shipping prototype in 4 hours with AI agents...',
+    'generating bespoke matte audio cased models for AURAMAX...',
+    'synthesizing HeyGen viral video script for TikTok...',
+    'scaling Shopify conversion funnel with algorithmic hooks...',
+    'turning raw intuition into production software...'
+  ];
+
+  let phraseIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+  let typingSpeed = 50;
+
+  const typeCycle = () => {
+    if (!typewriterElem) return;
+    const currentPhrase = typewriterPhrases[phraseIndex];
+
+    if (!isDeleting) {
+      typewriterElem.textContent = currentPhrase.substring(0, charIndex + 1);
+      charIndex++;
+      if (charIndex === currentPhrase.length) {
+        isDeleting = true;
+        setTimeout(typeCycle, 2200);
+        return;
+      }
+    } else {
+      typewriterElem.textContent = currentPhrase.substring(0, charIndex - 1);
+      charIndex--;
+      if (charIndex === 0) {
+        isDeleting = false;
+        phraseIndex = (phraseIndex + 1) % typewriterPhrases.length;
+        setTimeout(typeCycle, 500);
+        return;
+      }
+    }
+
+    setTimeout(typeCycle, isDeleting ? 30 : typingSpeed);
+  };
+
+  typeCycle();
+
+  // Terminal Script Buttons
+  if (terminalButtons && terminalBody) {
+    terminalButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const scriptType = btn.getAttribute('data-script');
+        let output = '';
+
+        if (scriptType === 'run-benchmarks') {
+          output = `
+            <div class="terminal-line t-info"><span class="t-arrow">&gt;</span> [BENCHMARK] Dev Velocity Comparison:</div>
+            <div class="terminal-line"><span class="t-prompt">&bull;</span> Traditional Bureaucracy: 3-6 weeks per MVP</div>
+            <div class="terminal-line t-success"><span class="t-check">&check;</span> Vibe Coding Workflow: 4-8 hours (Idea &rarr; Deployed)</div>
+          `;
+        } else if (scriptType === 'run-philosophy') {
+          output = `
+            <div class="terminal-line t-info"><span class="t-arrow">&gt;</span> [CORE RULES] Vibe Coding Manifesto:</div>
+            <div class="terminal-line"><span class="t-prompt">1.</span> Intuition + Logic &gt; Endless Planning</div>
+            <div class="terminal-line"><span class="t-prompt">2.</span> AI is an exoskeleton, not a replacement</div>
+            <div class="terminal-line"><span class="t-prompt">3.</span> If you don't distribute, your code doesn't exist</div>
+          `;
+        } else if (scriptType === 'run-stack') {
+          output = `
+            <div class="terminal-line t-info"><span class="t-arrow">&gt;</span> [STACK] Production Ecosystem:</div>
+            <div class="terminal-line"><span class="t-prompt">&bull;</span> Dev: Cursor, Antigravity, Next.js, TypeScript, Tailwind, Python</div>
+            <div class="terminal-line"><span class="t-prompt">&bull;</span> Media &amp; Growth: HeyGen, CapCut Pro, TikTok Spark Ads, Shopify API</div>
+          `;
+        }
+
+        // Insert output before interactive zone
+        const interactiveZone = terminalBody.querySelector('.terminal-interactive-zone');
+        if (interactiveZone) {
+          const tempDiv = document.createElement('div');
+          tempDiv.innerHTML = output;
+          terminalBody.insertBefore(tempDiv, interactiveZone);
+          terminalBody.scrollTop = terminalBody.scrollHeight;
+        }
+      });
+    });
+  }
+
+  /* ==========================================================================
+     6. VIDEO PLAYER CONTROLS (socialmedia.mp4)
+     ========================================================================== */
+  const showcaseVideo = document.getElementById('showcaseVideo');
+  const videoOverlay = document.getElementById('videoOverlay');
+  const playBtn = document.getElementById('playBtn');
+  const playIcon = playBtn ? playBtn.querySelector('.play-icon') : null;
+  const pauseIcon = playBtn ? playBtn.querySelector('.pause-icon') : null;
+  const videoProgressBar = document.getElementById('videoProgressBar');
+  const videoProgressContainer = document.getElementById('videoProgressContainer');
+  const videoCurrentTime = document.getElementById('videoCurrentTime');
+  const videoDuration = document.getElementById('videoDuration');
+  const muteToggle = document.getElementById('muteToggle');
+  const fullscreenToggle = document.getElementById('fullscreenToggle');
+
+  if (showcaseVideo && videoOverlay) {
+    const togglePlay = () => {
+      if (showcaseVideo.paused || showcaseVideo.ended) {
+        showcaseVideo.play().then(() => {
+          videoOverlay.classList.add('playing');
+          if (playIcon) playIcon.style.display = 'none';
+          if (pauseIcon) pauseIcon.style.display = 'block';
+        }).catch(err => {
+          console.warn('Playback error:', err);
+        });
+      } else {
+        showcaseVideo.pause();
+        videoOverlay.classList.remove('playing');
+        if (playIcon) playIcon.style.display = 'block';
+        if (pauseIcon) pauseIcon.style.display = 'none';
+      }
+    };
+
+    videoOverlay.addEventListener('click', togglePlay);
+
+    // Format time (mm:ss)
+    const formatTime = (seconds) => {
+      const mins = Math.floor(seconds / 60) || 0;
+      const secs = Math.floor(seconds % 60) || 0;
+      return `${mins}:${secs < 10 ? '0' : ''}${secs}`;
+    };
+
+    showcaseVideo.addEventListener('loadedmetadata', () => {
+      if (videoDuration) {
+        videoDuration.textContent = formatTime(showcaseVideo.duration);
+      }
+    });
+
+    showcaseVideo.addEventListener('timeupdate', () => {
+      if (showcaseVideo.duration) {
+        const percent = (showcaseVideo.currentTime / showcaseVideo.duration) * 100;
+        if (videoProgressBar) {
+          videoProgressBar.style.width = `${percent}%`;
+        }
+        if (videoCurrentTime) {
+          videoCurrentTime.textContent = formatTime(showcaseVideo.currentTime);
+        }
+      }
+    });
+
+    // Progress bar seeking
+    if (videoProgressContainer) {
+      videoProgressContainer.addEventListener('click', (e) => {
+        const rect = videoProgressContainer.getBoundingClientRect();
+        const pos = (e.clientX - rect.left) / rect.width;
+        if (showcaseVideo.duration) {
+          showcaseVideo.currentTime = pos * showcaseVideo.duration;
+        }
+      });
+    }
+
+    // Mute toggle
+    if (muteToggle) {
+      muteToggle.addEventListener('click', () => {
+        showcaseVideo.muted = !showcaseVideo.muted;
+        muteToggle.style.color = showcaseVideo.muted ? '#f43f5e' : '';
+      });
+    }
+
+    // Fullscreen toggle
+    if (fullscreenToggle) {
+      fullscreenToggle.addEventListener('click', () => {
+        if (!document.fullscreenElement) {
+          if (showcaseVideo.requestFullscreen) {
+            showcaseVideo.requestFullscreen();
+          } else if (showcaseVideo.webkitRequestFullscreen) {
+            showcaseVideo.webkitRequestFullscreen();
+          }
+        } else {
+          if (document.exitFullscreen) {
+            document.exitFullscreen();
+          }
+        }
+      });
+    }
+
+    // When video ends
+    showcaseVideo.addEventListener('ended', () => {
+      videoOverlay.classList.remove('playing');
+      if (playIcon) playIcon.style.display = 'block';
+      if (pauseIcon) pauseIcon.style.display = 'none';
+    });
+  }
+
+  /* ==========================================================================
+     7. CONTACT FORM TRANSMISSION & FEEDBACK
+     ========================================================================== */
+  const contactForm = document.getElementById('contactForm');
+  const submitBtn = document.getElementById('submitBtn');
+  const formToast = document.getElementById('formToast');
+
+  if (contactForm && submitBtn) {
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const nameInput = document.getElementById('userName');
+      const emailInput = document.getElementById('userEmail');
+      const inquiryInput = document.getElementById('inquiryType');
+      const messageInput = document.getElementById('userMessage');
+
+      const name = nameInput ? nameInput.value.trim() : '';
+      const email = emailInput ? emailInput.value.trim() : '';
+      const inquiry = inquiryInput ? inquiryInput.value : 'General Inquiry';
+      const message = messageInput ? messageInput.value.trim() : '';
+
+      if (!name || !email || !message) {
+        alert('Please fill out all required fields (*).');
+        return;
+      }
+
+      // Button loading state
+      const btnText = submitBtn.querySelector('.btn-text');
+      const sendIcon = submitBtn.querySelector('.send-icon');
+      const originalText = btnText ? btnText.textContent : 'Transmit Message';
+
+      if (btnText) btnText.textContent = 'Transmitting...';
+      submitBtn.disabled = true;
+
+      // Netlify Forms AJAX background submission
+      const formData = new FormData(contactForm);
+      if (!formData.get('form-name')) {
+        formData.append('form-name', 'contact');
+      }
+
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formData).toString()
+      })
+      .then(() => {
+        if (formToast) formToast.style.display = 'flex';
+        if (btnText) btnText.textContent = 'Transmitted ✓';
+        contactForm.reset();
+        setTimeout(() => {
+          submitBtn.disabled = false;
+          if (btnText) btnText.textContent = originalText;
+        }, 3500);
+      })
+      .catch(() => {
+        // Fallback for offline / local testing
+        const emailRecipient = 'ulhassanzain125@gmail.com';
+        const emailSubject = encodeURIComponent(`[Portfolio Contact - ${inquiry}] from ${name}`);
+        const emailBody = encodeURIComponent(
+          `Hi,\n\nName: ${name}\nEmail: ${email}\nTopic: ${inquiry}\n\nMessage:\n${message}\n\nSent from Portfolio Website.`
+        );
+        window.location.href = `mailto:${emailRecipient}?subject=${emailSubject}&body=${emailBody}`;
+        if (formToast) formToast.style.display = 'flex';
+        if (btnText) btnText.textContent = 'Transmitted ✓';
+        contactForm.reset();
+        setTimeout(() => {
+          submitBtn.disabled = false;
+          if (btnText) btnText.textContent = originalText;
+        }, 3500);
+      });
+    });
+  }
+
+  /* ==========================================================================
+     8. SUBTLE 3D TILT ON HOVER (Cards with [data-tilt])
+     ========================================================================== */
+  const tiltElements = document.querySelectorAll('[data-tilt]');
+  if (window.matchMedia('(pointer: fine)').matches) {
+    tiltElements.forEach(el => {
+      el.addEventListener('mousemove', (e) => {
+        const rect = el.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+
+        const rotateX = ((y - centerY) / centerY) * -7;
+        const rotateY = ((x - centerX) / centerX) * 7;
+
+        el.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
+      });
+
+      el.addEventListener('mouseleave', () => {
+        el.style.transform = '';
+      });
+    });
+  }
+
+  /* ==========================================================================
+     9. SMOOTH FADE-IN ON SCROLL (IntersectionObserver)
+     ========================================================================== */
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('revealed');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  document.querySelectorAll('.glass-card, .section-header, .product-card').forEach(elem => {
+    elem.style.transition = 'opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1)';
+    elem.style.opacity = '0.9';
+  });
+
+});
+
+</script>
+</body>
+</html>
